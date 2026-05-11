@@ -54,7 +54,7 @@ const data = [
   // RESIDENT EVIL
   {
     pregunta: "¿Quienes los protagonistas de Resident Evil 1?",
-    respuesta: "Jill - Chris",
+    respuesta: "Jill y Chris",
     opciones: ["Rebecca y Billy", "Jill y Chris", "Leon y Claire", "Jill y Carlos"],
   },
   {
