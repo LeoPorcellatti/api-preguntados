@@ -272,6 +272,12 @@ function shuffle(array) {
 const express = require("express");
 const app = express();
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET');
+  next();
+});
+
 app.get("/", (req, res) => {
   const preguntas = data.map((item) => ({
     pregunta: item.pregunta,
